@@ -8,10 +8,36 @@ body {
   font-family: Besley, serif;
 }
 
+/* Following three class selectors were added by me */
+.left {
+  display: flex;
+  align-items: center;
+  /* This doesn't appear to be the solution used in by TOP...but it works so I'm keeping it */
+  margin-right: auto;
+}
+
+.right {
+  display: flex;
+  /* I missed align-items here upon a first try */
+  align-items: center;
+  gap: 16px;
+}
+
+.links {
+  display: flex;
+  gap: 16px;
+}
+
 .header {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+
+  /* My solution */
+  display: flex;
+  padding: 8px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .profile-image {
