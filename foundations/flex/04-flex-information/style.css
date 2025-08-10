@@ -7,9 +7,33 @@ img {
   height: 100px;
 }
 
+/* Following three class selectors are mine */
+/* This also doesn't totally resemble the one in TOP's solution, but I'm keeping it */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  gap: 52px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  align-items: center;
+  text-align: center;
+}
+
 .title {
   font-size: 36px;
   font-weight: 900;
+  /* My CSS */
+  margin-bottom: 32px;
 }
 
 /* do not edit this footer */
